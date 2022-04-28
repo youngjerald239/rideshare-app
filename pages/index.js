@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import tw from 'tailwind-styled-components/dist/tailwind'
+import mapboxgl from '!mapbox-gl'
+
+mapboxgl.accessToken = 'pk.eyJ1IjoieW91bmdqZXJhbGQyMzkiLCJhIjoiY2t5Y2FtenBnMG5jczJwbXJ4c3QxbGFmeSJ9.8AsktT65tLtjWUniauoLqw'
 
 export default function Home() {
   return (
