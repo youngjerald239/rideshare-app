@@ -28,13 +28,16 @@ export default function Home() {
         {/* ActionButtons */}
         <ActionButtons>
           <ActionButton>
+          <ActionButtonImage src= "https://cdn-icons-png.flaticon.com/128/741/741407.png" />
             Get a Ride
           </ActionButton>
           <ActionButton>
+          <ActionButtonImage src = "https://cdn-icons.flaticon.com/png/128/737/premium/737967.png?token=exp=1651250381~hmac=dce4036774523a841ac67115ef994c44" />
             Order Food
           </ActionButton>
           <ActionButton>
-            Get Groceries
+          <ActionButtonImage src = "https://cdn-icons-png.flaticon.com/128/1261/1261163.png" />
+            Grocery Delivery
           </ActionButton>
         </ActionButtons>
         {/* InputButton */}
@@ -73,9 +76,11 @@ h-12 w-12 rounded-full border border-blue-300 p-px
 `
 
 const ActionButtons = tw.div`
-
+flex
 `
 
 const ActionButton = tw.div`
-
+bg-blue-300 flex-1
 `
+
+const ActionButtonImage = tw.img``
