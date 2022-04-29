@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import tw from 'tailwind-styled-components/dist/tailwind'
 import Map from './components/Map'
+import Link from 'next/link'
 
 
 
@@ -87,7 +88,9 @@ bg-blue-300 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg tran
 `
 
 const ActionButtonImage = tw.img`
-h-3/5 
+h-3/5 p-2
 `
 
- const InputButton = tw.div``
+ const InputButton = tw.div`
+ h-20 bg-gray-300 text-2xl p-4 flex items-center mt-8
+ `
