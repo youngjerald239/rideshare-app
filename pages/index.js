@@ -12,7 +12,16 @@ export default function Home() {
   return (
     <Wrapper>
       <Map />
-      <ActionItems>Start</ActionItems>
+      <ActionItems>
+        {/* Header */}
+        <Header>
+          Image Profile
+        </Header>
+        {/* ActionButtons */}
+        {/* InputButton */}
+      
+      
+      </ActionItems>
     </Wrapper>
   )
 }
@@ -25,3 +34,5 @@ flex flex-col bg-red-300 h-screen
 const ActionItems = tw.div`
 flex-1
 `
+
+const Header = tw.div``

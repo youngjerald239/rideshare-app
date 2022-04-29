@@ -24,5 +24,5 @@ const Map = () => {
 export default Map
 
 const Wrapper = tw.div`
-flex-1 flex-col bg-red-300 h-screen
+flex-1 
 `
