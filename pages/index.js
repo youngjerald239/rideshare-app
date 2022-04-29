@@ -25,8 +25,18 @@ export default function Home() {
           </Profile>
 
         </Header>
-
         {/* ActionButtons */}
+        <ActionButtons>
+          <ActionButton>
+            Get a Ride
+          </ActionButton>
+          <ActionButton>
+            Order Food
+          </ActionButton>
+          <ActionButton>
+            Get Groceries
+          </ActionButton>
+        </ActionButtons>
         {/* InputButton */}
       </ActionItems>
     </Wrapper>
@@ -34,12 +44,12 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
-flex flex-col bg-black-700 h-screen
+flex flex-col bg-gray-600 h-screen
 `
 
 
 const ActionItems = tw.div`
-flex-1
+flex-1 p-4
 `
 
 const Header = tw.div`
@@ -59,5 +69,13 @@ mr-4 w-20 text-sm
 `
 
 const UserImage = tw.img`
-h-12 w-12 rounded-full border border-gray-300 p-px
+h-12 w-12 rounded-full border border-blue-300 p-px
+`
+
+const ActionButtons = tw.div`
+
+`
+
+const ActionButton = tw.div`
+
 `
