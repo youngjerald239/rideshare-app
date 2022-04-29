@@ -15,7 +15,13 @@ export default function Home() {
       <ActionItems>
         {/* Header */}
         <Header>
-          Image Profile
+          {/* self closing tag */}
+          <PiedmontLogo src= "https://res.cloudinary.com/dbgpqig0z/image/upload/v1642268523/Screenshot_153_vjsmta.png" />
+          <Profile>
+            <Name>Jerald Young</Name>
+            <UserImage />
+          </Profile>
+
         </Header>
         {/* ActionButtons */}
         {/* InputButton */}
@@ -27,7 +33,7 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
-flex flex-col bg-red-300 h-screen
+flex flex-col bg-black-700 h-screen
 `
 
 
@@ -36,3 +42,7 @@ flex-1
 `
 
 const Header = tw.div``
+
+const PiedmontLogo = tw.img`
+  h-28
+`
