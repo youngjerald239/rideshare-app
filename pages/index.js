@@ -28,10 +28,12 @@ export default function Home() {
         </Header>
         {/* ActionButtons */}
         <ActionButtons>
+          <Link href ="/search">
           <ActionButton>
           <ActionButtonImage src= "https://cdn-icons-png.flaticon.com/128/741/741407.png" />
             Get a Ride
           </ActionButton>
+          </Link>
           <ActionButton>
           <ActionButtonImage src = "https://cdn-icons.flaticon.com/png/128/737/premium/737967.png?token=exp=1651250381~hmac=dce4036774523a841ac67115ef994c44" />
             Order Food
