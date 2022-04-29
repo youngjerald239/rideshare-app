@@ -36,11 +36,14 @@ export default function Home() {
             Order Food
           </ActionButton>
           <ActionButton>
-          <ActionButtonImage src = "https://cdn-icons-png.flaticon.com/128/1261/1261163.png" />
+          <ActionButtonImage src = "https://cdn-icons-png.flaticon.com/128/3082/3082031.png" />
             Grocery Delivery
           </ActionButton>
         </ActionButtons>
         {/* InputButton */}
+        <InputButton>
+          Enter Destination
+        </InputButton>
       </ActionItems>
     </Wrapper>
   )
@@ -60,7 +63,7 @@ flex justify-between items-center
 `
 
 const PiedmontLogo = tw.img`
-  h-28
+  h-28 rounded-lg
 `
 
 const Profile = tw.div`
@@ -76,11 +79,15 @@ h-12 w-12 rounded-full border border-blue-300 p-px
 `
 
 const ActionButtons = tw.div`
-flex
+flex w-3/5 items-center justify-center
 `
 
 const ActionButton = tw.div`
-bg-blue-300 flex-1
+bg-blue-300 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg transform hover:scale-105 transition text-lg
 `
 
-const ActionButtonImage = tw.img``
+const ActionButtonImage = tw.img`
+h-3/5 
+`
+
+ const InputButton = tw.div``
