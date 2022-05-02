@@ -64,7 +64,7 @@ h-5
 `
 
 const Line = tw.img`
-h-10
+h-8 mt-1 mb-1
 `
 
 const Square = tw.img`
