@@ -32,10 +32,10 @@ const search = () => {
           Saved Places
       </SavedPlaces>
       {/* Confirm Location */}
-      <ConfirmIconButton>
+      <ConfirmIconButtonContainer>
           <ConfirmIcon src="https://cdn-icons-png.flaticon.com/512/7317/7317601.png"/>
           Confirm Destination
-      </ConfirmIconButton>
+      </ConfirmIconButtonContainer>
 
    </Wrapper>
   )
@@ -95,8 +95,8 @@ const StarIcon = tw.img`
 bg-green-200 rounded-full w-10 h-10 p-2 mr-2
 `
 
-const ConfirmIconButton = tw.div`
-flex flex-col justify-center mt-4 items-center bg-black text-white rounded-full
+const ConfirmIconButtonContainer = tw.div`
+flex flex-col justify-center mt-4 ml-4 mr-4 items-center bg-black text-white rounded-lg cursor-pointer 
 `
 
 const ConfirmIcon = tw.img`
