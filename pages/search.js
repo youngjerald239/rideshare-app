@@ -16,7 +16,8 @@ const search = () => {
             <Square src = "https://cdn-icons-png.flaticon.com/128/747/747504.png"/>
         </FromToIcons>
         <InputBoxes>
-            
+            <Input />
+            <Input />
         </InputBoxes>
 
       </InputContainer>
@@ -55,4 +56,8 @@ const Circle = tw.img``
 const Line = tw.img``
 
 const Square = tw.img``
+
+const InputBoxes = tw.div``
+
+const Input = tw.input``
 
