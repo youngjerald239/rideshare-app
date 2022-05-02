@@ -19,6 +19,7 @@ const search = () => {
             <Input placeholder= "Enter your location" />
             <Input placeholder= "Enter your Destination"/>
         </InputBoxes>
+        <PlusIcon src="https://cdn-icons-png.flaticon.com/512/1665/1665731.png"/>
 
       </InputContainer>
       
@@ -44,11 +45,11 @@ h-12 p-2
 `
 
 const InputContainer = tw.div`
-flex
+flex items-center
 `
 
 const FromToIcons = tw.div`
-w-6 flex flex-col 
+w-7 my-3 flex flex-col 
 `
 
 const Circle = tw.img``
@@ -63,5 +64,9 @@ flex flex-col flex-1
 
 const Input = tw.input`
 h-10 bg-gray-300 my-2 rounded-2 p-2 outline-none border-none
+`
+
+const PlusIcon = tw.img`
+w-10 h-10 ml-3
 `
 
