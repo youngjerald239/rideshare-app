@@ -53,12 +53,12 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
-flex flex-col bg-gray-600 h-screen
+flex flex-col bg-gray-600 h-screen 
 `
 
 
 const ActionItems = tw.div`
-flex-1 p-4
+flex-1 p-4 items-center
 `
 
 const Header = tw.div`
@@ -70,7 +70,7 @@ const PiedmontLogo = tw.img`
 `
 
 const Profile = tw.div`
-flex items-center
+flex items-center 
 `
 
 const Name = tw.div`
