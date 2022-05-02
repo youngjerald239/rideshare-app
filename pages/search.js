@@ -1,12 +1,15 @@
 import React from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
+import Link from 'next/link'
 
 const search = () => {
   return (
    <Wrapper>
       {/* Button Container */}
       <ButtonContainer>
+        <Link href ="/">
           <BackButton src = "https://cdn-icons.flaticon.com/png/128/2099/premium/2099238.png?token=exp=1651270466~hmac=9cda45a5f7578e4fcc0cd9c093476a3a" />
+          </Link>
       </ButtonContainer>
       {/* Input container */}
       <InputContainer>
@@ -26,6 +29,7 @@ const search = () => {
       {/* Saved Places */}
       <SavedPlaces>
           <StarIcon src="https://cdn-icons-png.flaticon.com/512/7422/7422320.png"/>
+          Saved Places
       </SavedPlaces>
       {/* Confirm Location */}
 
@@ -44,7 +48,7 @@ px-4 bg-green-300
 `
 
 const BackButton = tw.img`
-h-12 p-2
+h-12 p-2 transform hover:scale-110 transition
 `
 
 const InputContainer = tw.div`
@@ -52,7 +56,7 @@ flex items-center px-4 mb-2
 `
 
 const FromToIcons = tw.div`
-w-7 mr-2 flex flex-col items-center
+w-7 mr-2 mb-2 flex flex-col items-center
 `
 
 const Circle = tw.img`
@@ -80,10 +84,10 @@ w-10 h-10 ml-3
 `
 
 const SavedPlaces = tw.div`
-
+flex items-center bg-gray-300 px-4 py-2
 `
 
 const StarIcon = tw.img`
-
+bg-green-200 rounded-full w-10 h-10 p-2 mr-2
 `
 
