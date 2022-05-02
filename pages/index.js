@@ -30,7 +30,7 @@ export default function Home() {
         <ActionButtons>
           <Link href ="/search">
           <ActionButton>
-          <ActionButtonImage src= "https://cdn-icons-png.flaticon.com/128/741/741407.png" />
+          <ActionButtonImage src= "https://cdn-icons.flaticon.com/png/128/1048/premium/1048316.png?token=exp=1651285586~hmac=0bb15a7b9994385049be73440878a890" />
             Get a Ride
           </ActionButton>
           </Link>
@@ -78,7 +78,7 @@ mr-4 w-20 text-sm
 `
 
 const UserImage = tw.img`
-h-12 w-12 rounded-full border border-blue-300 p-px
+h-12 w-12 rounded-full border border-green-300 p-px
 `
 
 const ActionButtons = tw.div`
@@ -86,7 +86,7 @@ flex w-3/5 items-center justify-center
 `
 
 const ActionButton = tw.div`
-bg-blue-300 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg transform hover:scale-105 transition text-lg
+bg-green-300 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg transform hover:scale-105 transition text-lg
 `
 
 const ActionButtonImage = tw.img`
