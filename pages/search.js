@@ -24,6 +24,9 @@ const search = () => {
       </InputContainer>
       
       {/* Saved Places */}
+      <SavedPlaces>
+          <StarIcon src="https://cdn-icons-png.flaticon.com/512/7422/7422320.png"/>
+      </SavedPlaces>
       {/* Confirm Location */}
 
    </Wrapper>
@@ -45,18 +48,24 @@ h-12 p-2
 `
 
 const InputContainer = tw.div`
-flex items-center
+flex items-center px-4 mb-2
 `
 
 const FromToIcons = tw.div`
-w-7 my-3 flex flex-col 
+w-7 mr-2 flex flex-col items-center
 `
 
-const Circle = tw.img``
+const Circle = tw.img`
+h-5
+`
 
-const Line = tw.img``
+const Line = tw.img`
+h-10
+`
 
-const Square = tw.img``
+const Square = tw.img`
+h-5
+`
 
 const InputBoxes = tw.div`
 flex flex-col flex-1 
@@ -68,5 +77,13 @@ h-10 bg-gray-300 my-2 rounded-2 p-2 outline-none border-none
 
 const PlusIcon = tw.img`
 w-10 h-10 ml-3
+`
+
+const SavedPlaces = tw.div`
+
+`
+
+const StarIcon = tw.img`
+
 `
 
