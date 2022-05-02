@@ -66,7 +66,7 @@ flex justify-between items-center
 `
 
 const PiedmontLogo = tw.img`
-  h-28 rounded-lg
+  h-10 rounded-lg
 `
 
 const Profile = tw.div`

@@ -52,7 +52,7 @@ px-4 bg-green-300
 `
 
 const BackButton = tw.img`
-h-12 p-2 transform hover:scale-110 transition
+h-12 p-2 transform hover:scale-110 transition cursor-pointer
 `
 
 const InputContainer = tw.div`
