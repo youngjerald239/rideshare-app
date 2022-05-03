@@ -18,7 +18,8 @@ const Confirm = () => {
         )
         .then(response => response.json())
         .then(data => {
-          console.log(data.features[0].center)
+          //console.log(data.features[0].center)
+          setPickupCoordinates(data.features[0].center)
         })
         //access_token
     }
@@ -34,8 +35,9 @@ const Confirm = () => {
         )
         .then(response => response.json())
         .then(data => {
-            console.log("Dropoff")
-          console.log(data.features[0].center)
+          //console.log("Dropoff")
+          //console.log(data.features[0].center)
+          setDropoffCoordinates(data.features[0].center)
         })
     }
 
