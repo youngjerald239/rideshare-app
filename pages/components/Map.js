@@ -20,6 +20,10 @@ const Map = (props) => {
     if(props.pickupCoordinates){
         addToMap(map, props.pickupCoordinates)
     }
+
+    if(props.dropoffCoordinates){
+        addToMap(map, props.dropoffCoordinates)
+    }
   }, [props.pickupCoordinates, props.dropoffCoordinates])
 
   const addToMap = (map, coordinates) => {
