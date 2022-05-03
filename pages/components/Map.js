@@ -6,7 +6,8 @@ import { useEffect } from 'react'
 mapboxgl.accessToken = 
 'pk.eyJ1IjoieW91bmdqZXJhbGQyMzkiLCJhIjoiY2t5Y2FtenBnMG5jczJwbXJ4c3QxbGFmeSJ9.8AsktT65tLtjWUniauoLqw'
 
-const Map = () => {
+const Map = (props) => {
+    console.log(props)
     useEffect(() => {
     const map = new mapboxgl.Map({
       container: "map",

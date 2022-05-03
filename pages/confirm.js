@@ -44,15 +44,19 @@ const Confirm = () => {
     useEffect(() => {
         getPickupCoordinates();
         getDropoffCoordinates()
+       
     }, [])
 
   return (
     <Wrapper>
-        <Map />
+        <Map
+           pickupCoordinates={pickupCoordinates}
+           dropoffCoordinates={dropoffCoordinates}
+         />
         <RideContainer>
         Ride Selector
         Confirm Button
-
+        
         </RideContainer>
     </Wrapper>
   )
