@@ -22,14 +22,19 @@ const search = () => {
             <Square src = "https://cdn-icons-png.flaticon.com/128/747/747504.png"/>
         </FromToIcons>
         <InputBoxes>
+            {/* Add the onChange to enter text in the search field */}
             <Input 
-            placeholder= 'Enter pickup location'
+            placeholder= 'Your pickup location?'
             value={pickup}
+            onChange={(e)=> setPickup(e.target.value)}
              />
+
             <Input 
-            placeholder= "Your Destination?"
+            placeholder= "Your destination?"
             value={dropoff}
+            onChange={(e)=> setDropoff(e.target.value)}
             />
+
         </InputBoxes>
         <PlusIcon src="https://cdn-icons-png.flaticon.com/512/1665/1665731.png"/>
 
