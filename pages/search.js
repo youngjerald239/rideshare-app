@@ -121,6 +121,6 @@ flex flex-col justify-center mt-4 ml-4 mr-4 items-center bg-black text-white rou
 `
 
 const ConfirmIcon = tw.img`
-h-20 w-20 
+h-10 w-10 
 `
 

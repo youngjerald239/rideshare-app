@@ -63,7 +63,8 @@ const Confirm = () => {
    
 
         <ConfirmButtonContainer>
-            Confirm Ride
+            <ConfirmButton src="https://cdn-icons-png.flaticon.com/512/7317/7317601.png"/>
+                Confirm Ride
         </ConfirmButtonContainer>
         
         </RideContainer>
@@ -80,4 +81,10 @@ const RideContainer = tw.div`
 flex-1 
 `
 
-const ConfirmButtonContainer = tw.div``
+const ConfirmButtonContainer = tw.div`
+flex flex-col justify-center mt-4 ml-4 mr-4 items-center bg-black text-white rounded-lg cursor-pointer
+`
+
+const ConfirmButton = tw.img`
+h-10 w-10
+`
