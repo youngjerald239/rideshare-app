@@ -32,11 +32,12 @@ const search = () => {
           Saved Places
       </SavedPlaces>
       {/* Confirm Location */}
-      <ConfirmIconButtonContainer>
+      <Link href="/confirm">
+       <ConfirmIconButtonContainer>
           <ConfirmIcon src="https://cdn-icons-png.flaticon.com/512/7317/7317601.png"/>
           Confirm Destination
-      </ConfirmIconButtonContainer>
-
+       </ConfirmIconButtonContainer>
+     </Link>
    </Wrapper>
   )
 }

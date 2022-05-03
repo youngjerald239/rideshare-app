@@ -25,7 +25,7 @@ const Map = (props) => {
     if(props.dropoffCoordinates){
         addToMap(map, props.dropoffCoordinates)
     }
-    //Props to auto zoom between both coordinates
+    //Props to auto zoom between both coordinates' map markers
     if(props.pickupCoordinates && props.dropoffCoordinates){
       map.fitBounds([
           props.pickupCoordinates,
