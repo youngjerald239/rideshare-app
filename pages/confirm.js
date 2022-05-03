@@ -58,8 +58,12 @@ const Confirm = () => {
            dropoffCoordinates={dropoffCoordinates}
          />
         <RideContainer>
-        Ride Selector
-        Confirm Button
+        <RideSelector>
+            Ride Selector
+        </RideSelector>
+        <ConfirmButtonContainer>
+            Confirm Ride
+        </ConfirmButtonContainer>
         
         </RideContainer>
     </Wrapper>
@@ -74,3 +78,6 @@ flex h-screen flex-col
 const RideContainer = tw.div`
 flex-1 
 `
+const RideSelector = tw.div``
+
+const ConfirmButtonContainer = tw.div``
