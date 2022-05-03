@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
 import Map from './components/Map'
 import {useRouter} from 'next/router'
+import RideSelector from './components/RideSelector'
 
 const Confirm = () => {
     //save the location and destination entry
@@ -58,9 +59,9 @@ const Confirm = () => {
            dropoffCoordinates={dropoffCoordinates}
          />
         <RideContainer>
-        <RideSelector>
-            Ride Selector
-        </RideSelector>
+        <RideSelector/>
+   
+
         <ConfirmButtonContainer>
             Confirm Ride
         </ConfirmButtonContainer>
@@ -78,6 +79,5 @@ flex h-screen flex-col
 const RideContainer = tw.div`
 flex-1 
 `
-const RideSelector = tw.div``
 
 const ConfirmButtonContainer = tw.div``
