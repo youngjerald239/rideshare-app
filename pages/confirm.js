@@ -31,12 +31,14 @@ const Confirm = () => {
         )
         .then(response => response.json())
         .then(data => {
+            console.log("Dropoff")
           console.log(data.features[0].center)
         })
     }
 
     useEffect(() => {
-        getPickupCoordinates()
+        getPickupCoordinates();
+        getDropoffCoordinates()
     }, [])
 
   return (
