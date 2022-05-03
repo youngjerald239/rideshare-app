@@ -7,7 +7,7 @@ const RideSelector = () => {
         <Title>Choose a ride, or swipe up for more</Title>
         <CarList>
             <Car>
-                <CarImage src = "" />
+                <CarImage src = "https://cdn-icons-png.flaticon.com/512/5965/5965376.png" />
             </Car>
         </CarList>
     </Wrapper>
