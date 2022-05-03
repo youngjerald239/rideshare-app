@@ -1,8 +1,11 @@
-import React from 'react'
+import {useState} from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
 import Link from 'next/link'
 
 const search = () => {
+    const [pickup, setPickup] = useState("")
+    const [dropoff, setDropoff] = useState("")
+
   return (
    <Wrapper>
       {/* Button Container */}
@@ -19,8 +22,14 @@ const search = () => {
             <Square src = "https://cdn-icons-png.flaticon.com/128/747/747504.png"/>
         </FromToIcons>
         <InputBoxes>
-            <Input placeholder= "Enter your location" />
-            <Input placeholder= "Enter your Destination"/>
+            <Input 
+            placeholder= 'Enter pickup location'
+            value={pickup}
+             />
+            <Input 
+            placeholder= "Your Destination?"
+            value={dropoff}
+            />
         </InputBoxes>
         <PlusIcon src="https://cdn-icons-png.flaticon.com/512/1665/1665731.png"/>
 
