@@ -4,7 +4,7 @@ import Map from './components/Map'
 
 const Confirm = () => {
 
-    const getCoordinates = () => {
+    const getPickupCoordinates = () => {
         const location = "Santa Monica"
         //fetch geocoding map api data
         fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?` +
@@ -15,13 +15,13 @@ const Confirm = () => {
         )
         .then(response => response.json())
         .then(data => {
-          console.log(data)
+          console.log(data.features[0].center)
         })
         //access_token
     }
 
     useEffect(() => {
-        getCoordinates()
+        getPickupCoordinates()
     }, [])
 
   return (
