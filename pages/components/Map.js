@@ -8,21 +8,23 @@ mapboxgl.accessToken =
 
 const Map = (props) => {
     console.log(props)
+
     useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: "map",
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-99.29011, 39.39172],
-      zoom: 3
-    })
+      const map = new mapboxgl.Map({
+       container: "map",
+       style: 'mapbox://styles/mapbox/streets-v11',
+       center: [-99.29011, 39.39172],
+       zoom: 3
+     })
 
-    addToMap(map)
+    if(props.pickupCoordinates){
+        addToMap(map, props.pickupCoordinates)
+    }
+  }, [props.pickupCoordinates, props.dropoffCoordinates])
 
-  })
-
-  const addToMap = (map) => {
+  const addToMap = (map, coordinates) => {
     const marker1 = new mapboxgl.Marker()
-    .setLngLat([12.554729, 55.70651])
+    .setLngLat(coordinates)
     .addTo(map)
   }
 
