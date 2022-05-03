@@ -11,4 +11,6 @@ const RideSelector = () => {
 
 export default RideSelector
 
-const Wrapper = tw.div``
+const Wrapper = tw.div`
+flex flex-1 
+`

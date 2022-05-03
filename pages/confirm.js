@@ -78,11 +78,11 @@ const Wrapper = tw.div`
 flex h-screen flex-col
 `
 const RideContainer = tw.div`
-flex-1 
+flex flex-1 flex-col bg-gray-600
 `
 
 const ConfirmButtonContainer = tw.div`
-flex flex-col justify-center mt-4 ml-4 mr-4 items-center bg-black text-white rounded-lg cursor-pointer
+flex flex-col justify-center m-4 items-center bg-black text-white rounded-lg cursor-pointer
 `
 
 const ConfirmButton = tw.img`
