@@ -32,7 +32,13 @@ const search = () => {
           Saved Places
       </SavedPlaces>
       {/* Confirm Location */}
-      <Link href="/confirm">
+      <Link href={{
+          pathname: "/confirm",
+          query:{
+              pickup: "Santa Monica",
+              dropoff: "Los Angeles"
+          }
+      }}>
        <ConfirmIconButtonContainer>
           <ConfirmIcon src="https://cdn-icons-png.flaticon.com/512/7317/7317601.png"/>
           Confirm Destination
