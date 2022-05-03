@@ -1,8 +1,11 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
 import Map from './components/Map'
 
 const Confirm = () => {
+
+    const [pickupCoordinates, setPickupCoordinates] = useState()
+    const [dropoffCoordinates, setDropoffCoordinates] = useState()
 
     const getPickupCoordinates = () => {
         const pickup = "Santa Monica"
