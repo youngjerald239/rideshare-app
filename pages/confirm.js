@@ -61,7 +61,9 @@ const Confirm = () => {
         <RideContainer>
         <RideSelector/>
    
+        <BorderContainer>
 
+        </BorderContainer>
         <ConfirmButtonContainer>
             <ConfirmButton src="https://cdn-icons-png.flaticon.com/512/7317/7317601.png"/>
                 Confirm Ride
@@ -75,16 +77,20 @@ const Confirm = () => {
 export default Confirm
 
 const Wrapper = tw.div`
-flex h-screen flex-col
+flex h-screen flex-col 
 `
 const RideContainer = tw.div`
-flex flex-1 flex-col bg-gray-600
+flex flex-1 flex-col bg-gray-600 
+`
+
+const BorderContainer = tw.div`
+border-t-2
 `
 
 const ConfirmButtonContainer = tw.div`
-flex flex-col justify-center m-4 items-center bg-black text-white rounded-lg cursor-pointer
+flex flex-col justify-center my-4 mx-4 items-center bg-black text-white rounded-lg cursor-pointer text-xl 
 `
 
 const ConfirmButton = tw.img`
-h-10 w-10
+h-10 w-10 
 `

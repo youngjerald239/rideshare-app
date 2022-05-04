@@ -12,7 +12,7 @@ const RideSelector = () => {
                     <Service>Ride(s)</Service>
                     <Time>5 min away</Time>
                 </CarDetails>
-                   <Price>$15</Price>
+                   <Price>$15.00</Price>
             </Car>
         </CarList>
     </Wrapper>
@@ -21,11 +21,17 @@ const RideSelector = () => {
 
 export default RideSelector
 
-const Price = tw.div``
+const Price = tw.div`
+text-sm
+`
 
-const Time = tw.div``
+const Time = tw.div`
+text-xs text-green-300
+`
 
-const Service = tw.div``
+const Service = tw.div`
+font-medium
+`
 
 const CarDetails = tw.div`
 flex-1
@@ -38,7 +44,7 @@ flex p-4 items-center
 `
 
 const CarImage = tw.img`
-h-16 mr-2
+h-16 mr-4
 `
 
 const Title = tw.div`
