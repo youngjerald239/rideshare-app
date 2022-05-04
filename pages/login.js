@@ -8,9 +8,9 @@ const Login = () => {
     const router = useRouter()
 
     useEffect(()=>{
-        onAuthStateChanged( user=>{
+        onAuthStateChanged(auth, user=>{
         if (user){
-            router.push('/')
+          router.push('/')
         }
     })
  }, [])
@@ -19,7 +19,7 @@ const Login = () => {
     <PiedmontLogo src= "https://res.cloudinary.com/dbgpqig0z/image/upload/v1642268523/Screenshot_153_vjsmta.png" />
         <Title>Log in to access your account</Title>
         <HeadImage src='https://cdn-icons-gif.flaticon.com/7308/7308525.gif'/>
-        <SignInButton>
+        <SignInButton onClick={()=>signInWithPopup(auth, provider)}>
             Sign in with Google
         </SignInButton>
     </Wrapper>
