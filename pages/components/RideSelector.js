@@ -1,19 +1,23 @@
 import React from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
+import { carList } from '../data/carList'
 
 const RideSelector = () => {
   return (
     <Wrapper>
         <Title>Choose a ride, or swipe up for more</Title>
         <CarList>
-            <Car>
-                <CarImage src = "https://cdn-icons-png.flaticon.com/128/1085/1085850.png" />
+        {carList.map((car)=>(
+          <Car>
+             <CarImage src = "https://cdn-icons-png.flaticon.com/128/1085/1085850.png" />
                 <CarDetails>
                     <Service>Ride(s)</Service>
                     <Time>5 min away</Time>
                 </CarDetails>
                    <Price>$15.00</Price>
             </Car>
+        ))}
+            
         </CarList>
     </Wrapper>
   )
