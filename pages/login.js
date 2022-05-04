@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
+import { useRouter } from 'next/router'
+import { signInWithPopup, onAuthStateChanged } from 'firebase/auth'
+import {auth, provider} from '../firebase'
 
 const Login = () => {
+    const router = useRouter()
+
+    useEffect(()=>{
+        onAuthStateChanged( user=>{
+        if (user){
+            router.push('/')
+        }
+    })
+ }, [])
   return (
     <Wrapper>
     <PiedmontLogo src= "https://res.cloudinary.com/dbgpqig0z/image/upload/v1642268523/Screenshot_153_vjsmta.png" />
