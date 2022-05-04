@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
 import { carList } from '../data/carList'
 
-const RideSelector = () => {
+const RideSelector = ({pickupCoordinates, dropoffCoordinates}) => {
     const [rideDuration, setRideDuration]=useState(0)
 
 
@@ -11,7 +11,7 @@ const RideSelector = () => {
     //fropoffCoordinates
     //template literal
     useEffect(()=>{
-        fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinates[0]},${pickupCoordinates[1]};${dropoffCoordinates[0]},${dropoffCoordinates[1]}`)
+        fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinates[0]},${pickupCoordinates[1]};${dropoffCoordinates[0]},${dropoffCoordinates[1]}?access_token=pk.eyJ1IjoieW91bmdqZXJhbGQyMzkiLCJhIjoiY2t5Y2FtenBnMG5jczJwbXJ4c3QxbGFmeSJ9.8AsktT65tLtjWUniauoLqw`)
     }, [])
   return (
     <Wrapper>

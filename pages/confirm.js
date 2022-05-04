@@ -11,8 +11,8 @@ const Confirm = () => {
     //console.log("Pickup", pickup)
     //console.log("Dropoff", dropoff)
 
-    const [pickupCoordinates, setPickupCoordinates] = useState()
-    const [dropoffCoordinates, setDropoffCoordinates] = useState()
+    const [pickupCoordinates, setPickupCoordinates] = useState([0, 0])
+    const [dropoffCoordinates, setDropoffCoordinates] = useState([0, 0])
 
     const getPickupCoordinates = (pickup) => {
         //fetch geocoding map api data
@@ -51,7 +51,7 @@ const Confirm = () => {
         getDropoffCoordinates(dropoff)
        
     }, [pickup, dropoff])
-
+    //pass coordinates through map and rideselector
   return (
     <Wrapper>
         <Map
@@ -59,7 +59,10 @@ const Confirm = () => {
            dropoffCoordinates={dropoffCoordinates}
          />
         <RideContainer>
-        <RideSelector/>
+        <RideSelector
+            pickupCoordinates={pickupCoordinates}
+           dropoffCoordinates={dropoffCoordinates}
+        />
    
         <BorderContainer>
 
