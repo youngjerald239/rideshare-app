@@ -56,5 +56,5 @@ text-green-300 text-center text-xs py-2 border-b
 `
 
 const Wrapper = tw.div`
-flex-1 
+flex-1 overflow-y-scroll
 `

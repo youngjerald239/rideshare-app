@@ -80,7 +80,7 @@ const Wrapper = tw.div`
 flex h-screen flex-col 
 `
 const RideContainer = tw.div`
-flex flex-1 flex-col bg-gray-600 
+flex flex-1 flex-col bg-gray-600 h-1/2
 `
 
 const BorderContainer = tw.div`
