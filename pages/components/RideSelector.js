@@ -41,7 +41,9 @@ const CarDetails = tw.div`
 flex-1
 `
 
-const CarList = tw.div``
+const CarList = tw.div`
+overflow-y-scroll
+`
 
 const Car = tw.div`
 flex p-4 items-center
@@ -56,5 +58,5 @@ text-green-300 text-center text-xs py-2 border-b
 `
 
 const Wrapper = tw.div`
-flex-1 overflow-y-scroll
+flex-1 overflow-y-scroll flex flex-col
 `
