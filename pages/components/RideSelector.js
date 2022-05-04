@@ -7,11 +7,11 @@ const RideSelector = () => {
     <Wrapper>
         <Title>Choose a ride, or swipe up for more</Title>
         <CarList>
-        {carList.map((car)=>(
-          <Car>
-             <CarImage src = "https://cdn-icons-png.flaticon.com/128/1085/1085850.png" />
+        {carList.map((car, index)=>(
+          <Car key={index}>
+             <CarImage src={car.imgUrl} />
                 <CarDetails>
-                    <Service>Ride(s)</Service>
+                    <Service>{car.service}</Service>
                     <Time>5 min away</Time>
                 </CarDetails>
                    <Price>$15.00</Price>
