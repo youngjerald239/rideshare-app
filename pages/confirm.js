@@ -3,6 +3,7 @@ import tw from 'tailwind-styled-components/dist/tailwind'
 import Map from './components/Map'
 import {useRouter} from 'next/router'
 import RideSelector from './components/RideSelector'
+import Link from 'next/link'
 
 const Confirm = () => {
     //save the location and destination entry
@@ -54,6 +55,11 @@ const Confirm = () => {
     //pass coordinates through map and rideselector
   return (
     <Wrapper>
+    <ButtonContainer>
+      <Link href="/search">
+      <BackButton src = "https://cdn-icons.flaticon.com/png/128/2099/premium/2099238.png?token=exp=1651270466~hmac=9cda45a5f7578e4fcc0cd9c093476a3a" />
+      </Link>  
+    </ButtonContainer>
         <Map
            pickupCoordinates={pickupCoordinates}
            dropoffCoordinates={dropoffCoordinates}
@@ -78,6 +84,14 @@ const Confirm = () => {
 }
 
 export default Confirm
+
+const ButtonContainer = tw.div`
+rounded-full absolute top-4  left-4 z-10 bg-green-300 shadow-md cursor-pointer 
+`
+
+const BackButton = tw.img`
+h-full object-contain h-8 w-8
+`
 
 const Wrapper = tw.div`
 flex h-screen flex-col 
