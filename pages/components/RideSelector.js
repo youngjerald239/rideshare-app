@@ -7,7 +7,12 @@ const RideSelector = () => {
         <Title>Choose a ride, or swipe up for more</Title>
         <CarList>
             <Car>
-                <CarImage src = "https://cdn-icons-png.flaticon.com/512/5965/5965376.png" />
+                <CarImage src = "https://cdn-icons-png.flaticon.com/128/1085/1085850.png" />
+                <CarDetails>
+                    <Service>Ride(s)</Service>
+                    <Time>5 min away</Time>
+                </CarDetails>
+                   <Price>$15</Price>
             </Car>
         </CarList>
     </Wrapper>
@@ -16,11 +21,25 @@ const RideSelector = () => {
 
 export default RideSelector
 
+const Price = tw.div``
+
+const Time = tw.div``
+
+const Service = tw.div``
+
+const CarDetails = tw.div`
+flex-1
+`
+
 const CarList = tw.div``
 
-const Car = tw.div``
+const Car = tw.div`
+flex p-4 items-center
+`
 
-const CarImage = tw.img``
+const CarImage = tw.img`
+h-16 mr-2
+`
 
 const Title = tw.div`
 text-green-300 text-center text-xs py-2 border-b
