@@ -1,8 +1,18 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import tw from 'tailwind-styled-components/dist/tailwind'
 import { carList } from '../data/carList'
 
 const RideSelector = () => {
+    const [rideDuration, setRideDuration]=useState(0)
+
+
+    //get ride duration from Mapbox api
+    //pickupCoordinates
+    //fropoffCoordinates
+    //template literal
+    useEffect(()=>{
+        fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinates[0]},${pickupCoordinates[1]};${dropoffCoordinates[0]},${dropoffCoordinates[1]}`)
+    }, [])
   return (
     <Wrapper>
         <Title>Choose a ride, or swipe up for more</Title>
